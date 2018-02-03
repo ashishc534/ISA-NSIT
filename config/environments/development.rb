@@ -37,15 +37,18 @@ Rails.application.configure do
   config.assets.raise_runtime_errors = true
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.action_mailer.delivery_method = :smtp
-ActionMailer::Base.smtp_settings = {
-      address:              'smtp.gmail.com',
-      port:                 587,
-      domain:               'gmail.com',
-      user_name:            'railsproject007@gmail.com',
-      password:             'password@123',
-      authentication:       :plain,
-      enable_starttls_auto: true
-} 
+ ActionMailer::Base.smtp_settings = {
+ :address => "smtp.yandex.ru",
+ :port => 465,
+ :domain => "yandex.ru",
+ :authentication => :login,
+ :user_name => "researchgate@isa-nsit.in",
+ :password => "Ankush@97",
+ :ssl=> true,
+ :enable_starttls_auto=> true,
+ :tls=> true
+}
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
