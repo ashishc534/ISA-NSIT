@@ -1,1 +1,1 @@
-Made With Ruby on Rails as Back-end and Bootstrap as Front End ans Dynamic Effects with Javascript!
+Made With Ruby on Rails as Back-end and Bootstrap as Front End and Dynamic Effects with Javascript!
